@@ -1,6 +1,6 @@
 import { HStack, Spacer, Link, Box } from "@chakra-ui/react";
 import Logo from "../../../Images/Logo.jpg";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { CartWidget } from "./CartWidget";
 
 const Navbar = () => {
     return(
@@ -18,11 +18,11 @@ const Navbar = () => {
                 <Link p={2}>Contacto</Link>
             </HStack>
             <HStack>
-                <HamburgerIcon m={2} />
+                <CartWidget m={2} />
             </HStack>
         </HStack>
     )
 }
 
-export { Navbar }
+export { Navbar };
 

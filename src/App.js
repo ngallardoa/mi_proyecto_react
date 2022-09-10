@@ -6,10 +6,12 @@ import { ItemListContainer } from './Components/Main/ItemListContainer';
 
 const App = () => {
   return (
+    <>
     <ChakraProvider>
       <Navbar />
       <ItemListContainer saludo="Bienvenido/a a la tienda" />
     </ChakraProvider>
+    </>
   )
 }
 

@@ -6,8 +6,8 @@ import swal from "sweetalert";
 const ItemCount = ({inicial, stock, onAdd}) => {
 
     const [contador, setContador] = useState(inicial);
-    const aumentar = () => {contador < stock && setContador(contador + 1)};
-    const reducir = () => {contador > inicial && setContador(contador - 1)};
+    const aumentar = () => contador < stock && setContador(contador + 1);
+    const reducir = () => contador > inicial && setContador(contador - 1);
     const agregarAlCarrito = () => {
         swal("Agregado al carrito!");
         console.log(contador);

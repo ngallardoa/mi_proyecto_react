@@ -1,0 +1,42 @@
+export const products = [
+    {
+        id: 1,
+        image: "../Images/FCE.jpg",
+        nombreProducto: "Preparación para FCE",
+        categoría: "Exámenes internacionales",
+        precio: 4200,
+        stock: 20,
+    },
+    {
+        id: 2,
+        image: "../Images/CursoConversación.jpg",
+        nombreProducto: "Inglés conversacional",
+        categoría: "Otros",
+        precio: 5000,
+        stock: 20,
+    },
+    {
+        id: 3,
+        image: "../Images/IELTS.jpg",
+        nombreProducto: "Preparación para IELTS",
+        categoría: "Exámenes internacionales",
+        precio: 6000,
+        stock: 20,
+    },
+    {
+        id: 4,
+        image: "../Images/CursoAdolescentes.jpg",
+        nombreProducto: "Inglés para adolescentes",
+        categoría: "Jóvenes",
+        precio: 4300,
+        stock: 20,
+    },
+    {
+        id: 5,
+        image: "../Images/CursoNiños.jpg",
+        nombreProducto: "Inglés para niños",
+        categoría: "Jóvenes",
+        precio: 5200,
+        stock: 20,
+    },
+];

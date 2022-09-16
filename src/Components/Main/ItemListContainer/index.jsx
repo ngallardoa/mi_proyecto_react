@@ -28,7 +28,6 @@ const ItemListContainer = ({ saludo }) => {
             :
             <Text>...Cargando...</Text>
             }
-            <ItemList listProduct={listProduct} />
             {/* <ItemCount inicial={1} stock={5} p={5} onAdd={() => (console.log(""))} /> */}
         </>
     )

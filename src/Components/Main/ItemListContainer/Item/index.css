@@ -1,0 +1,13 @@
+.cards {
+    min-height: 175px;
+    display: block;
+    padding: 5px;
+    border: 2px black solid;
+}
+
+.cards-img {
+    min-height: 175px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

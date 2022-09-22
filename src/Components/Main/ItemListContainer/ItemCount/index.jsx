@@ -11,6 +11,7 @@ const ItemCount = ({inicial, stock, onAdd}) => {
     const agregarAlCarrito = () => {
         swal("Agregado al carrito!");
         console.log(contador);
+        setContador(0);
     };
 
     return(

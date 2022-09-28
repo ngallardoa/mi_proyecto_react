@@ -1,3 +1,10 @@
+Repositorio que contiene todos los archivos comprendidos dentro del proyecto de la cursada de React.js. 
+
+Contacto: gallardo.3853@gmail.com.
+
+Librerías usadas: Chakra UI, Sweet Alert
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

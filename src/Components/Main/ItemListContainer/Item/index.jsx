@@ -1,4 +1,5 @@
-import { Text, Box, Grid, Flex } from "@chakra-ui/react";
+import { Text, Box, Button, Link } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 import "./index.css";
 
 const Item = ({ products }) => {
@@ -12,6 +13,13 @@ const Item = ({ products }) => {
                 <Box align="center" className="cards">
                     <Text>{products.nombreProducto}</Text>
                     <Text>$ {products.precio}</Text>
+                </Box>
+                <Box align="center">
+                    <Button>
+                        <NavLink to={`products/${products.id}`}>
+                            <Link>Ver detalle</Link>
+                        </NavLink>
+                    </Button>
                 </Box>
             </Box>
         </>

@@ -1,10 +1,13 @@
 import React from "react";
 import { BsShopWindow } from "react-icons/bs"
+import { NavLink } from "react-router-dom";
 
 const CartWidget = () => {
     return(
         <>
-            <BsShopWindow />
+            <NavLink to="/cart">
+                <BsShopWindow />
+            </NavLink>
         </>
     )
 }

@@ -19,7 +19,7 @@ const ItemCount = ({inicial, stock, onAdd}) => {
             <Button onClick={aumentar}>+</Button>
             <Text>{contador}</Text>
             <Button onClick={reducir}>-</Button>
-            <Button onClick={agregarAlCarrito}>Agregar al carrito</Button>
+            <Button onClick={onAdd}>Agregar al carrito</Button>
         </HStack>
     )
 }

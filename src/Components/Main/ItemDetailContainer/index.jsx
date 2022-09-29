@@ -4,7 +4,7 @@ import { ItemDetail } from "../../Main/ItemDetailContainer/ItemDetail";
 import { products } from "../../../Utils/products";
 import { Box, Text } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
-
+import { ItemCount } from "./ItemDetail/ItemCount";
 
 const ItemDetailContainer = () => {
 

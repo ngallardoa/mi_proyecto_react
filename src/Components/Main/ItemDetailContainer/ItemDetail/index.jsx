@@ -7,9 +7,9 @@ import "./index.css"
 
 const ItemDetail = ({ listProductDetail }) => {
 
-    const [isAdded, setIsAdded] = useState(false)
+    const [isAdded, setIsAdded] = useState(false);
     const onAdd = () => {
-        setIsAdded(true)
+        setIsAdded(true);
         swal("Agregado al carrito!");
     }
 

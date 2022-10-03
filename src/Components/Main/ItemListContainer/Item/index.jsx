@@ -1,7 +1,5 @@
 import { Text, Box, Button, Link } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-import { ItemCount } from "../../ItemDetailContainer/ItemDetail/ItemCount";
-
 import "./index.css";
 
 const Item = ({ products }) => {
@@ -16,8 +14,7 @@ const Item = ({ products }) => {
                     <Text>{products.nombreProducto}</Text>
                     <Text>$ {products.precio}</Text>
                 </Box>
-                    <ItemCount inicial={1} stock={5} p={5} onAdd={() => (console.log(""))} />
-                <Box align="center">
+                <Box p={2} align="center">
                     <Button>
                         <NavLink to={`products/${products.id}`}>
                             <Link>Ver detalle</Link>

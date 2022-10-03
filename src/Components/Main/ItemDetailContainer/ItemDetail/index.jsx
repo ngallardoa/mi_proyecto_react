@@ -2,18 +2,22 @@ import { Box, Text, Button } from "@chakra-ui/react"
 import { useState } from "react"
 import { ItemCount } from "./ItemCount"
 import { NavLink } from "react-router-dom"
+import { useCartContext } from "../../../../Context/cartContext"
 import swal from "sweetalert"
 import "./index.css"
 
 const ItemDetail = ({ listProductDetail }) => {
-
-    const [isAdded, setIsAdded] = useState(false);
-    const onAdd = () => {
-        setIsAdded(true);
-        swal("Agregado al carrito!");
+    // const { image, nombreProducto, precio, stock } = listProductDetail
+    const [isAdded, setIsAdded] = useState(false)
+    const { addToCart, cartList } = useCartContext()
+    const onAdd = (quantity) => {
+        addToCart(listProductDetail, quantity)
+        setIsAdded(true)
+        swal("Agregado al carrito!")
     }
 
     return(
+        <>
         <Box p={5} m={5} justify="center" border="2px" borderColor="gray.200">
             <Box align="center" className="detail">
                 <Text p={5} m={5}>{listProductDetail.nombreProducto}</Text>
@@ -32,7 +36,7 @@ const ItemDetail = ({ listProductDetail }) => {
                 </Button>
             </Box>
         </Box>
-        
+        </>
     )
 
 }

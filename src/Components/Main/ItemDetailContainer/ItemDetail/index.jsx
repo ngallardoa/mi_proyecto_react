@@ -7,7 +7,6 @@ import swal from "sweetalert"
 import "./index.css"
 
 const ItemDetail = ({ listProductDetail }) => {
-    // const { image, nombreProducto, precio, stock } = listProductDetail
     const [isAdded, setIsAdded] = useState(false)
     const { addToCart, cartList } = useCartContext()
     const onAdd = (quantity) => {

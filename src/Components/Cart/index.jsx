@@ -23,7 +23,7 @@ const Cart = () => {
                             </Flex>    
                         </Flex>
                     )}
-                {cartList.lenght === 0 ?
+                {cartList.length === 0 ?
                     <Flex m={4} justify="center" border="2px" borderColor="gray.200">
                         <Text>El carrito está vacío</Text>
                     </Flex>

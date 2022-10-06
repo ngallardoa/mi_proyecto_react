@@ -7,6 +7,7 @@ import swal from "sweetalert"
 import "./index.css"
 
 const ItemDetail = ({ listProductDetail }) => {
+    const {image, nombreProducto, categoria, precio, stock } = listProductDetail
     const [isAdded, setIsAdded] = useState(false)
     const { addToCart, cartList } = useCartContext()
     const onAdd = (quantity) => {
@@ -14,27 +15,27 @@ const ItemDetail = ({ listProductDetail }) => {
         setIsAdded(true)
         swal("Agregado al carrito!")
     }
-
+console.log(cartList)
     return(
         <>
-        <Box p={5} m={5} justify="center" border="2px" borderColor="gray.200">
-            <Box align="center" className="detail">
-                <Text p={5} m={5}>{listProductDetail.nombreProducto}</Text>
-                <Text p={5} m={5}>$ {listProductDetail.precio}</Text>
+            <Box p={5} m={5} justify="center" border="2px" borderColor="gray.200">
+                <Box align="center" className="detail">
+                    <Text p={5} m={5}>{listProductDetail.nombreProducto}</Text>
+                    <Text p={5} m={5}>$ {listProductDetail.precio}</Text>
+                </Box>
+                <Box align="center" className="detail">
+                    <Button>
+                        {                   
+                            isAdded ?
+                            <NavLink to="/cart">
+                                Ir al carrito
+                            </NavLink>
+                            :
+                            <ItemCount inicial={1} stock={5} p={5} onAdd={onAdd} />
+                        }
+                    </Button>
+                </Box>
             </Box>
-            <Box align="center" className="detail">
-                <Button>
-                    {                   
-                        isAdded ?
-                        <NavLink to="/cart">
-                            Ir al carrito
-                        </NavLink>
-                        :
-                        <ItemCount inicial={1} stock={5} p={5} onAdd={onAdd} />
-                    }
-                </Button>
-            </Box>
-        </Box>
         </>
     )
 

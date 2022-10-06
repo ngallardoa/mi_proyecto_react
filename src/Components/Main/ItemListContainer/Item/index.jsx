@@ -17,7 +17,7 @@ const Item = ({ products }) => {
                 <Box p={2} align="center">
                     <Button>
                         <NavLink to={`products/${products.id}`}>
-                            <Link>Ver detalle</Link>
+                            <Text>Ver detalle</Text>
                         </NavLink>
                     </Button>
                 </Box>

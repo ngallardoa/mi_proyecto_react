@@ -1,5 +1,6 @@
-import { Box, Text, Flex, Button, VStack } from "@chakra-ui/react"
-import { useCartContext } from "../../Context/cartContext"
+import { Box, Text, Flex, Button, VStack } from "@chakra-ui/react";
+import { useCartContext } from "../../Context/cartContext";
+import { NavLink } from "react-router-dom";
 
 const Cart = () => {
 
@@ -32,6 +33,9 @@ const Cart = () => {
                         <Flex m={4} align="center" justify="center" border="2px" borderColor="gray.200">
                             <Box m={4} justify="center">Total del carrito: $ {totalPrice()}</Box>
                             <Button m={4} justify="center" onClick={clearCart}>Limpiar carrito</Button>
+                            <NavLink to="/CartCheckout">
+                                <Button m={4} justify="center">Finalizar compra</Button>
+                            </NavLink>
                         </Flex>
                     </>
                 }

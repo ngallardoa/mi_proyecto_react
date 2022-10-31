@@ -1,9 +1,11 @@
 import Logo from "../../../Images/Logo.jpg";
 import { CartWidget } from "./CartWidget";
 import { NavLink } from "react-router-dom";
-import { Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider, HStack, Spacer, Link, Box, Button } from '@chakra-ui/react'
+import { Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider, HStack, Spacer, Link, Box, Button } from '@chakra-ui/react';
+import { Auth } from "./Auth";
 
 const Navbar = () => {
+
     return(
         <HStack p={2} bgGradient="linear(to-t, red.100, red.500)">
             <NavLink to="/" >
@@ -14,7 +16,7 @@ const Navbar = () => {
                 <Box fontSize={32}>Instituto English Everywhere</Box>
             </HStack>
             <Spacer />
-            <HStack>
+            <HStack>            
                 <Link p={2}>Inicio</Link>
                 <Link p={2}>Quiénes somos</Link>
                 <Link p={2}>Nuestros cursos</Link>
@@ -43,6 +45,9 @@ const Navbar = () => {
                         </MenuItem>
                     </MenuList>
                 </Menu>
+            </HStack>
+            <HStack>
+                <Auth m={2} />
             </HStack>
             <HStack>
                 <CartWidget m={2} />

@@ -1,12 +1,13 @@
-import { Box, Text, Button } from "@chakra-ui/react"
-import { useState } from "react"
-import { ItemCount } from "./ItemCount"
-import { NavLink } from "react-router-dom"
-import { useCartContext } from "../../../../Context/cartContext"
-import swal from "sweetalert"
-import "./index.css"
+import { Box, Text, Button } from "@chakra-ui/react";
+import { useState } from "react";
+import { ItemCount } from "./ItemCount";
+import { NavLink } from "react-router-dom";
+import { useCartContext } from "../../../../Context/cartContext";
+import swal from "sweetalert";
+import "./index.css";
 
 const ItemDetail = ({ listProductDetail }) => {
+    
     const {image, nombreProducto, categoria, precio, stock } = listProductDetail
     const [isAdded, setIsAdded] = useState(false)
     const { addToCart, cartList } = useCartContext()
@@ -15,7 +16,6 @@ const ItemDetail = ({ listProductDetail }) => {
         setIsAdded(true)
         swal("Agregado al carrito!")
     }
-console.log(cartList)
     return(
         <>
             <Box p={5} m={5} justify="center" border="2px" borderColor="gray.200">

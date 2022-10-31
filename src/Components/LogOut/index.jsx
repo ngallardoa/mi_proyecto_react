@@ -1,8 +1,7 @@
 import { Box, Button, Input } from "@chakra-ui/react";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
-import { useAuthm, useSessionContext } from "../../Context/sessionContext";
+import { useSessionContext } from "../../Context/sessionContext";
 
 export function LogOut() {
 

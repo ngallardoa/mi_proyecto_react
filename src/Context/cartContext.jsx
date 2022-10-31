@@ -1,9 +1,12 @@
 import { createContext, useState, useContext } from "react";
 
+/*Context para el servicio de firestore*/
+
 const CartContext = createContext([]);
 export const useCartContext = () => useContext(CartContext)
 
-export function CartContextProvider({ children }) { 
+export function CartContextProvider({ children }) {
+
     const [cartList, setCartList] = useState([])
     const isInCart = (id) => cartList.find(products => products.id === id)
     const addToCart = (item, quantity) => {

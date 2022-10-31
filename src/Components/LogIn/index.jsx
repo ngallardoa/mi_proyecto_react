@@ -1,7 +1,7 @@
 import { Box, Button, Input } from "@chakra-ui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth, useSessionContext } from "../../Context/sessionContext";
+import { useSessionContext } from "../../Context/sessionContext";
 
 export function LogIn() {
 
@@ -20,6 +20,7 @@ export function LogIn() {
         try {
             await logIn(user.email, user.password)
             navigate("/");
+            e.target.value = "";
         } catch (error) {
             setError(error.message);
         }

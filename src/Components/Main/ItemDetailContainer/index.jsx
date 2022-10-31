@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
-import { customFetch } from "../../../Utils/customFetch";
 import { ItemDetail } from "../../Main/ItemDetailContainer/ItemDetail";
-import { products } from "../../../Utils/products";
 import { Box, Text } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
-import { ItemCount } from "./ItemDetail/ItemCount";
 import { db } from "../../../Firebase/firebase";
 import { getDoc, doc, collection } from "firebase/firestore";
 

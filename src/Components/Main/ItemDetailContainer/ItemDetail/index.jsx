@@ -8,7 +8,6 @@ import "./index.css";
 
 const ItemDetail = ({ listProductDetail }) => {
     
-    const {image, nombreProducto, categoria, precio, stock } = listProductDetail
     const [isAdded, setIsAdded] = useState(false)
     const { addToCart, cartList } = useCartContext()
     const onAdd = (quantity) => {

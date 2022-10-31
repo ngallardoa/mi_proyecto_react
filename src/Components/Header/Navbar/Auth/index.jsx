@@ -1,9 +1,10 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useSessionContext } from "../../../../Context/sessionContext";
 import { LogOut } from "../../../LogOut";
+
+/*Nuestra los botones de inicio sesión, registro y cerrar sesión dependiendo del status del usuario en relación a autenticación*/
 
 const Auth = () => {
 

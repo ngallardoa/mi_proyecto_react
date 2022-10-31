@@ -2,18 +2,9 @@ import { createContext, useState, useContext, useEffect } from "react";
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { auth } from "../Firebase/firebase";
 
+/*Context para el servicio de autenticación*/
+
 const SessionContext = createContext([]);
-
-// export const useAuth = () => {
-    
-//     const authSessionContext = useContext(SessionContext);
-
-//     return(
-//         <>
-//             {!authSessionContext? console.log("No hay auth provider") : console.log(authSessionContext)}
-//         </>
-//     )
-// };
 
 export const useSessionContext = () => useContext(SessionContext);
 

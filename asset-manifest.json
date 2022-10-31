@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.731cddb1.css",
+    "main.js": "/react-gh-pages/static/js/main.070b42e1.js",
+    "static/js/787.4f45b5e4.chunk.js": "/react-gh-pages/static/js/787.4f45b5e4.chunk.js",
+    "static/media/FCE.jpg": "/react-gh-pages/static/media/FCE.5af6878d1da34b4a8717.jpg",
+    "static/media/IELTS.jpg": "/react-gh-pages/static/media/IELTS.937cc0230c52886036d2.jpg",
+    "static/media/CursoNiños.jpg": "/react-gh-pages/static/media/CursoNiños.12efb0f06f8a72c3640b.jpg",
+    "static/media/CursoAdolescentes.jpg": "/react-gh-pages/static/media/CursoAdolescentes.ce63786bbd3835c78814.jpg",
+    "static/media/CursoConversación.jpg": "/react-gh-pages/static/media/CursoConversación.9e4dfbe72e42b0435b2b.jpg",
+    "static/media/Logo.jpg": "/react-gh-pages/static/media/Logo.38189d256147cf09a743.jpg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.731cddb1.css.map": "/react-gh-pages/static/css/main.731cddb1.css.map",
+    "main.070b42e1.js.map": "/react-gh-pages/static/js/main.070b42e1.js.map",
+    "787.4f45b5e4.chunk.js.map": "/react-gh-pages/static/js/787.4f45b5e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.731cddb1.css",
+    "static/js/main.070b42e1.js"
+  ]
+}

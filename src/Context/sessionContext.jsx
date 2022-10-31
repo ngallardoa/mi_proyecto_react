@@ -22,7 +22,7 @@ export function SessionContextProvider({ children }) {
     const [user, setUser] = useState(null);
     const signUp = async (email, password) => {
 
-        createUserWithEmailAndPassword(auth, email, password)
+        await createUserWithEmailAndPassword(auth, email, password)
 
     };
     const logIn = async (email, password) => {
